@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Mulish", sans-serif;
+  /* background-color: aliceblue; */
+}
+.contain {
+  background-color: rgb(87, 81, 81);
+}
+.navbar a {
+  color: white;
+}
+
+.navbar-name {
+  font-size: 1.9rem !important;
+  color: white;
+}
+.navbar-name:hover {
+  color: rgb(129, 144, 221);
+}
+.links {
+  width: 100%;
+  /* background-color: beige; */
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.ul_list {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar a:hover {
+  color: rgb(145, 173, 224);
+}
+.active-link {
+  color: red;
+}
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 40px;
+}
+#header h1 {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 45px;
+  color: black;
+}
+#header .brand-name {
+  color: red;
+}
+#header h2 {
+  font-size: 25px;
+  color: rgb(43, 37, 37);
+}
+#header .btn-get-started {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid rgb(105, 135, 198);
+  border-radius: 15px;
+  letter-spacing: 0.5px;
+}
+#header .btn-get-started:hover {
+  background-color: rgb(97, 130, 229);
+  color: white;
+}
+#header .img-fluid {
+  margin-left: 90px;
+  text-align: right;
+  height: 75vh;
+}
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.card-img-top {
+  height: 30vh;
+}
+.card {
+  transition: all 0.4s cubic-bezier(0.075, 0.885, 0, 1);
+  background-color: white;
+  border-radius: 12px;
+}
+.card:hover {
+  box-shadow: 0px 20px 10px -8px rgb(74, 70, 70);
+  transform: scale(1.05, 1.05);
+}
+.card-title {
+  font-weight: 900;
+}
+@media (max-width: 991px) {
+  #header {
+    height: 70vh;
+    text-align: center;
+  }
+  #header .header-img {
+    text-align: center;
+  }
+  #header .header-img img {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  #header {
+    margin-top: 20px;
+  }
+  #header h1 {
+    font-size: 28px;
+  }
+  #header h2 {
+    font-size: 10px;
+    border-bottom: 30px;
+  }
+  #header .header-img img {
+    margin-top: 200px;
+    margin-left: -15px;
+    margin-bottom: -40px;
+    width: 70%;
+  }
+}
